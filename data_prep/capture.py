@@ -37,4 +37,4 @@ def capture(n: int, emotion: str, dir: Path):
     cv2.destroyAllWindows()
 
 
-capture(2, 'anger', Path('..', 'data'))
+capture(10, 'crying', Path('..', 'data'))
