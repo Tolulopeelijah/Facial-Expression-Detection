@@ -1,7 +1,7 @@
 import cv2
 from pathlib import Path
 
-classes = ['happy', 'angry', 'frown'] 
+classes = ['happy', 'angry', 'neutral', 'surprised'] 
 
 
 def capture(n: int, emotion: str, dir: Path):
@@ -37,4 +37,4 @@ def capture(n: int, emotion: str, dir: Path):
     cv2.destroyAllWindows()
 
 
-capture(10, 'crying', Path('..', 'data'))
+capture(50, 'surprised', Path('..', 'data'))
